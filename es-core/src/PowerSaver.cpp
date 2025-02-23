@@ -73,7 +73,7 @@ bool PowerSaver::getState()
 void PowerSaver::setState(bool state)
 {
 	bool ps_enabled = Settings::getInstance()->getString("PowerSaverMode") != "disabled";
-	mState = ps_enabled && state;
+	mState = ps_enabled;
 }
 
 void PowerSaver::runningScreenSaver(bool state)
