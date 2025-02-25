@@ -410,7 +410,7 @@ void Window::onSleep()
 
 void Window::onWake()
 {
-	Scripting::fireEvent("wake");
+	Scripting::fireEvent("sleep");
 }
 
 bool Window::isProcessing()
