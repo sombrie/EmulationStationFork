@@ -410,7 +410,7 @@ void Window::onSleep()
 
 void Window::onWake()
 {
-	Scripting::fireEvent("sleep");
+	Scripting::fireEvent("wake");
 }
 
 bool Window::isProcessing()
@@ -437,7 +437,7 @@ bool Window::cancelScreenSaver()
 	if (mScreenSaver && mRenderScreenSaver)
 	{
 		mScreenSaver->stopScreenSaver();
-		mRenderScreenSaver = false;
+		mRenderScreenSaver = true;
 		Scripting::fireEvent("screensaver-stop");
 
 		// Tell the GUI components the screensaver has stopped
