@@ -206,10 +206,6 @@ void Window::update(int deltaTime)
 
 void Window::render()
 { 
-	Renderer::setMatrix(Transform4x4f::Identity());
-	Renderer::drawRect(0,0, Renderer::getScreenWidth(), Renderer::getScreenHeight(), 0x00000096, 0x00000096);
-	//Renderer::drawRect(x, y, w, h, 0x00000096 | opacity, 0x00000096 | opacity);
-	
 	Transform4x4f transform = Transform4x4f::Identity();
 
 	mRenderedHelpPrompts = false;
