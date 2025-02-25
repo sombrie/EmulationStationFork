@@ -79,11 +79,11 @@ void PowerSaver::setState(bool state)
 void PowerSaver::runningScreenSaver(bool state)
 {
 	mRunningScreenSaver = state;
-	/*if (mWakeupTimeout < mMode)
+	if (mWakeupTimeout < mMode)
 	{
 		// Disable PS if wake up time is less than mode as PS will never trigger
 		setState(!state);
-	}*/
+	}
 }
 
 bool PowerSaver::isScreenSaverActive()
